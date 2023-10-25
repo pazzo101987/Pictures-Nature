@@ -1,0 +1,47 @@
+body {
+  margin: 0px;
+  background-color: pink;
+}
+
+.album {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 2px 2px 2px 2px blue;
+}
+
+button {
+  height: 50px;
+  width: 80px;
+  margin: 15px;
+  font-size: larger;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.btnDark {
+  height: 55px;
+  width: 90px;
+  margin: 15px;
+  font-size: medium;
+}
+
+.darkFont {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.darkBody {
+  background-color: black;
+}
