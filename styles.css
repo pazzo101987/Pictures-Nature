@@ -45,3 +45,11 @@ h1 {
 .darkBody {
   background-color: black;
 }
+
+p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bolder;
+  font-size: 30px;
+}

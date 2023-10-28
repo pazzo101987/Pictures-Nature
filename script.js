@@ -9,6 +9,7 @@ const btnOff = document.querySelector(".btnOff");
 const btnOn = document.querySelector(".btnOn");
 const background = document.querySelector("body");
 const title = document.querySelector("h1");
+const counter = document.querySelector(".counter");
 
 btnRandom.addEventListener("click", function () {
   let random = Math.trunc(Math.random() * 5) + 1;
@@ -23,6 +24,7 @@ btnNext.addEventListener("click", function () {
     i++;
     console.log(i);
     image.src = `animal-${i}.jpg`;
+    counter.textContent = i;
   }
 });
 
@@ -31,6 +33,7 @@ btnPrevious.addEventListener("click", function () {
     i--;
     console.log(i);
     image.src = `animal-${i}.jpg`;
+    counter.textContent = i;
   }
 });
 
@@ -47,6 +50,7 @@ btnDark.addEventListener("click", function () {
     btnOff.classList.remove("hidden");
     btnOn.classList.add("hidden");
     background.classList.remove("darkBody");
+    title.classList.remove("darkFont");
     // console.log("dark mode is OFF");
     darkMode = false;
   }
